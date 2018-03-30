@@ -1,0 +1,57 @@
+This project is my submission for the Assignment 5 of my Data Mining course.
+All of the code was written by John Phillips (me).
+
+To run the program, ensure that you have the two following files:
+    naiveBayes.py
+    naiveBayesFunctions.py
+
+To compile and run this program, type the following command into the command
+line:
+
+    python naiveBayes.py
+
+Follow the prompts given from the program to submit a labelled data set in order
+to execute the algorithm.
+
+The output will be placed in an external file called Result.txt.
+
+
+- What is this program for?
+  This program is a classifier for labelled data.
+
+
+- Compile the program (in Unix environment) and Run the program
+  python naiveBayes.py
+
+
+- Check Result
+	$cat Result.txt
+
+- Overview the program code:
+
+  The program consists of two files:
+    naiveBayes.py
+    naiveBayesFunctions.py
+  naiveBayes.py is the main file which controls the flow of individual functions,
+  which are contained in naiveBayesFunctions.py.
+
+- The following is the program structure:
+
+	main()
+      ---->	read input for training data file
+			----> check file exist
+      ---->	read input for training data file
+      ----> check file exist
+			----> Make sure both files have the same attributes
+      ----> read input for target attribute
+
+      ----> identifyAttributes() to find all possible values for all attributes in training data
+      ----> train() to train the classifier with the training data
+
+			----> generateResults() to run through the test data and label each tuple based on the
+            occurrences from the training data classifier model
+
+	    ---->	output the result into "Result.txt" file
+
+
+- Data Noise Handling: ...
